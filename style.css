@@ -1,0 +1,511 @@
+/* navbar */
+.navbar {
+  font-family: Arial;
+  font-family: Arial;
+  position: fixed;
+  z-index: 1;
+  top: 0;
+  left: 0;
+  width: 100%;
+  box-shadow: 0 -2px 10px 0 rgba(0, 0, 0, 0.15);
+  background-color: #fff;
+  padding-top: 10px;
+  padding-bottom: 10px;
+}
+
+.docplanner_logo img {
+  width: 268px;
+  height: 33px;
+  float: left;
+}
+
+.topnav {
+  overflow: hidden;
+  float: right;
+}
+
+.topnav a {
+  float: left;
+  display: block;
+  color: grey;
+  text-align: center;
+  padding: 14px 16px;
+  text-decoration: none;
+  font-size: 17px;
+}
+
+.active {
+  color: #00bfa5;
+  background-color: #f6f8f8;
+}
+
+.topnav .icon {
+  display: none;
+}
+
+.dropdown {
+  float: left;
+  overflow: hidden;
+}
+
+.dropdown .dropbtn {
+  font-size: 17px;
+  border: none;
+  outline: none;
+  color: grey;
+  padding: 14px 16px;
+  background-color: inherit;
+  font-family: inherit;
+  margin: 0;
+}
+
+.dropdown-content {
+  margin-left: -100px;
+  display: none;
+  position: absolute;
+  background-color: #ffffff;
+  min-width: 250px;
+  box-shadow: 0 5px 10px 0 #d3cfc9;
+  z-index: 1;
+}
+
+.dropdown-content a {
+  float: none;
+  color: grey;
+  padding: 12px 16px;
+  text-decoration: none;
+  display: block;
+  text-align: left;
+}
+
+.topnav a:hover,
+.dropdown:hover .dropbtn {
+  color: #00bfa5;
+}
+
+.dropdown-content a:hover {
+  background-color: #f6f8f8;
+  color: #00bfa5;
+}
+
+.dropdown:hover .dropdown-content {
+  display: block;
+}
+
+@media screen and (max-width: 600px) {
+  .topnav a,
+  .dropdown .dropbtn {
+    display: none;
+  }
+  .topnav a.icon {
+    float: right;
+    display: block;
+  }
+}
+
+@media screen and (max-width: 600px) {
+  .topnav.responsive {
+    position: relative;
+    width: 100%;
+  }
+  .topnav.responsive .icon {
+    position: absolute;
+    right: 0;
+    top: 0;
+  }
+  .topnav.responsive a {
+    float: none;
+    display: block;
+    text-align: left;
+  }
+  .topnav.responsive .dropdown {
+    float: none;
+  }
+  .topnav.responsive .dropdown-content {
+    position: relative;
+    margin: 0;
+    overflow: auto;
+  }
+  .topnav.responsive .dropdown .dropbtn {
+    display: block;
+    width: 100%;
+    text-align: left;
+  }
+}
+/* intro-health */
+.intro-health-section {
+  font-family: Roboto, Arial, sans-serif;
+  color: #747474;
+  padding-top: 70px;
+}
+.intro-health {
+  display: flex;
+  margin: 2% 10%;
+  padding: 0 20px;
+}
+.center {
+  flex-direction: column;
+  align-items: center;
+}
+.inner-container {
+  display: flex;
+  justify-content: space-between;
+}
+.intro-health p {
+  width: 48%;
+  line-height: 1.5em;
+  font-size: 1.15em;
+}
+.green {
+  color: #00bfa5;
+}
+.intro-health p {
+  font-size: 16px;
+  line-height: 1.75;
+  font-weight: 400;
+}
+.intro-health h1 {
+  text-align: center;
+  font-family: Work Sans, Arial, sans-serif;
+  font-weight: 300;
+  font-size: 2.125rem;
+  margin: 1em 0;
+}
+@media screen and (max-width: 650px) {
+  .intro-health {
+    margin: 0px;
+  }
+
+  .intro-health p {
+    width: 100%;
+  }
+  .inner-container {
+    flex-wrap: wrap;
+  }
+}
+/* services */
+.services {
+  margin: 2% 10%;
+  padding-top: 50px;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-around;
+}
+.services .beneficiary {
+  /* flex-wrap: wrap; */
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  width: 30%;
+  color: #fff;
+  border-radius: 10px;
+  height: 345px;
+  margin-bottom: 10px;
+}
+.services .patients {
+  background: #00ccb1;
+}
+.services .doctors {
+  background: #3d83df;
+}
+.services .clinics {
+  background: #1b2734;
+}
+.beneficiary .item h1 {
+  font-family: Work Sans, Arial, sans-serif;
+  letter-spacing: -0.3px;
+  font-size: 1.625em;
+  font-weight: 400;
+  color: #fff;
+  margin: 0.3em 0;
+}
+.beneficiary .item h2 {
+  letter-spacing: -0.3px;
+  font-family: Work Sans, Arial, sans-serif;
+  font-size: 1.5em;
+  font-weight: 300;
+  line-height: 1.2;
+  margin: 0;
+  color: #fff;
+}
+.services .beneficiary .item,
+.style-select {
+  padding: 2em 2em 0;
+}
+.style-select {
+  margin-bottom: 35px;
+}
+.style-select select {
+  display: block;
+  background: none;
+  border: 0;
+  color: #fff;
+  font-family: Roboto, Arial, sans-serif;
+  font-weight: 400;
+  letter-spacing: 0.04em;
+  font-size: 1.2rem;
+  /* text-align: center; */
+  text-decoration: underline;
+  cursor: pointer;
+}
+@media screen and (max-width: 870px) {
+  .beneficiary {
+    min-width: 300px;
+  }
+  .services {
+    margin: 0px;
+  }
+}
+/* brands */
+.brands {
+  margin: 2% 10%;
+  display: flex;
+  flex-wrap: wrap;
+}
+.brands h1 {
+  width: 250px;
+  font-size: 1.825em;
+  padding-right: 1em;
+  color: #00b39b;
+  font-family: Work Sans, Arial, sans-serif;
+  font-weight: 300;
+  letter-spacing: -0.3px;
+}
+.brand-item {
+  max-width: 700px;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  align-items: center;
+  list-style: none;
+}
+.brand-item li {
+  width: 160px;
+  padding: 5px 0;
+}
+.brand-item li a svg {
+  height: 20px;
+  width: auto;
+  padding-left: 10px;
+}
+.bwtocolor img {
+  -webkit-filter: grayscale(100%) !important;
+  filter: grayscale(100%) !important;
+}
+.bwtocolor img:hover {
+  -webkit-filter: grayscale(0) !important;
+  filter: grayscale(0) !important;
+}
+/*To change any SVGs color :user filter css*/
+.filter-grey {
+  filter: invert(80%) sepia(12%) saturate(12%) hue-rotate(102deg)
+    brightness(94%) contrast(92%);
+}
+svg:hover {
+  fill: #00b39b;
+}
+
+@media screen and (max-width: 685px) {
+  .brands {
+    margin: 0px;
+    padding-left: 0px;
+  }
+  .brands h1 {
+    padding-left: 1em;
+  }
+}
+/* stats */
+.stats-section {
+  background: #e5faf8;
+  background-image: linear-gradient(
+    -45deg,
+    rgba(0, 204, 177, 0.01) 5%,
+    rgba(61, 199, 223, 0.1)
+  );
+}
+.stats-container {
+  background-image: url(https://www.docplanner.com/img/logo.png);
+  background-repeat: no-repeat;
+  background-position: left bottom;
+  overflow: hidden;
+}
+.stats {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+}
+.intro-stats {
+  margin-top: 2em;
+  max-width: 420px;
+}
+.intro-stats h1 {
+  font-size: 2.125rem;
+  color: #00b39b;
+  font-family: Work Sans, Arial, sans-serif;
+  font-weight: 100;
+  letter-spacing: -0.3px;
+}
+.intro-stats p {
+  font-family: Roboto, Arial, sans-serif;
+  color: #747474;
+  margin: 1.6em 0;
+  font-size: 0.875em;
+  font-weight: 400;
+  line-height: 1.7142857143;
+}
+.advantages {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-evenly;
+  max-width: 600px;
+}
+.element {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  margin: 20px 0px;
+  width: 200px;
+  height: 250px;
+  background: #fff;
+  border-radius: 5px;
+  box-shadow: 0 1px 4px 0 rgba(0, 0, 0, 0.05);
+  text-align: center;
+  padding: 15px;
+  font-size: 0.8125em;
+}
+.move {
+  transform: translate(0px, 30px);
+}
+.element h3 {
+  font-family: Work Sans, Arial, sans-serif;
+  font-weight: 100;
+  letter-spacing: -0.3px;
+  font-size: 1.8461538462em;
+  color: #00b39b;
+  margin: 0.5em 0;
+}
+.element p {
+  font-family: Roboto, Arial, sans-serif;
+  color: #747474;
+  line-height: 1.3;
+}
+/* intro-countries */
+.intro-countries-section {
+  font-family: Roboto, Arial, sans-serif;
+  color: #747474;
+  justify-content: center;
+  display: flex;
+  padding-top: 70px;
+}
+.intro-countries {
+  width: 450px;
+  display: flex;
+  flex-direction: column;
+  text-align: center;
+}
+.green {
+  color: #00b39b;
+}
+.intro-countries h1 {
+  font-family: Work Sans, Arial, sans-serif;
+  font-size: 2.1428571429em;
+  font-weight: 300;
+  letter-spacing: -0.3px;
+  margin: 0;
+}
+.intro-countries p {
+  margin: 1.6em 0;
+}
+/* countries */
+.countries-section {
+  display: flex;
+  justify-content: center;
+  font-family: Roboto, Arial, sans-serif;
+  color: #747474;
+  padding-top: 70px;
+  margin: 0;
+}
+
+.countries {
+  max-width: 1000px;
+  display: flex;
+  justify-content: center;
+  flex-wrap: wrap;
+}
+.country {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  margin: 10px;
+  border: 1px solid rgba(0, 0, 0, 0.03);
+}
+.details {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin: 0.5em 1em;
+}
+
+.details button {
+  font-family: Roboto, Arial, sans-serif;
+  font-size: 0.625rem;
+  letter-spacing: 0.04em;
+  background: #3d83df;
+  color: #fff;
+  text-decoration: none;
+  border: none;
+  border-radius: 4px;
+  padding: 1em 1.5em;
+  cursor: pointer;
+}
+a:link,
+a:visited {
+  text-decoration: none;
+  color: #747474;
+}
+/* join-us */
+.join-us {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  margin: 3rem auto;
+}
+.join-us h1 {
+  font-weight: 100;
+  font-size: 2.1428571429em;
+  color: #333;
+  margin-bottom: 0.75em;
+}
+.join-us .btn {
+  text-decoration: none;
+  text-transform: uppercase;
+  border: none;
+  border-radius: 4px;
+  padding: 1.1666666667em 1.5em;
+  background: #3d83df;
+  font-family: Roboto, Arial, sans-serif;
+  line-height: 1em;
+  color: #fff;
+  font-weight: 700;
+  letter-spacing: 0.04em;
+  font-size: 0.75rem;
+  margin-bottom: 20px;
+}
+/* footer */
+.footer {
+  display: flex;
+  flex-direction: column;
+  text-align: center;
+  border-top: 1px solid #eef2f2;
+  padding: 1em 0;
+}
+.footer p {
+  font-size: 12px;
+  color: #ababab;
+  font-family: Roboto, Arial, sans-serif;
+}
+.footer a {
+  text-decoration: none;
+  color: #3d83df;
+}
